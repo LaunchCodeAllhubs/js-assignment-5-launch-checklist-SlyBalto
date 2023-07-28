@@ -1,6 +1,17 @@
-// Write your JavaScript code here!
+import { formSubmission, validateInput, myFetch } from "./scriptHelper";
 
 window.addEventListener("load", function() {
+
+    submitButton = document.getElementById('formSubmit')
+    form = document.getElementById('testForm')
+
+    submitButton.addEventListener('submit', function(event) {
+    event.preventDefault()
+    console.log('something')
+    alert('showing')
+    // validateInput(form)
+    formSubmission();
+    })
 
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()

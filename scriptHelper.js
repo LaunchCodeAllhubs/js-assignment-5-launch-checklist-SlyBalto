@@ -17,17 +17,18 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 function validateInput(testInput) {
-   
+    alert(testInput)
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-   
+    alert('you clicketh the button')
+    
 }
 
 async function myFetch() {
     let planetsReturned;
 
-    planetsReturned = await fetch().then( function(response) {
+    planetsReturned = await fetch('https://handlers.education.launchcode.org/static/planets.json').then( function(response) {
         });
 
     return planetsReturned;
@@ -39,5 +40,5 @@ function pickPlanet(planets) {
 module.exports.addDestinationInfo = addDestinationInfo;
 module.exports.validateInput = validateInput;
 module.exports.formSubmission = formSubmission;
-module.exports.pickPlanet = pickPlanet; 
 module.exports.myFetch = myFetch;
+module.exports.pickPlanet = pickPlanet;
